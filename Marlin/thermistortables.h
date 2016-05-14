@@ -1081,6 +1081,73 @@ const short temptable_70[][2] PROGMEM = {
 };
 #endif
 
+#if (THERMISTORHEATER_0 == 71) || (THERMISTORHEATER_1 == 71)  || (THERMISTORHEATER_2 == 71) || (THERMISTORBED == 71) //100k bed thermistor
+
+const short temptable_70[][2] PROGMEM = {
+{       23*OVERSAMPLENR ,       285     },
+{       25*OVERSAMPLENR ,       280     },
+{       27*OVERSAMPLENR ,       275     },
+{       28*OVERSAMPLENR ,       270     },
+{       31*OVERSAMPLENR ,       265     },
+{       33*OVERSAMPLENR ,       260     },
+{       35*OVERSAMPLENR ,       255     },
+{       38*OVERSAMPLENR ,       250     },
+{       41*OVERSAMPLENR ,       245     },
+{       44*OVERSAMPLENR ,       241     },
+{       48*OVERSAMPLENR ,       236     },
+{       52*OVERSAMPLENR ,       230     },
+{       56*OVERSAMPLENR ,       227     },
+{       61*OVERSAMPLENR ,       222     },
+{       66*OVERSAMPLENR ,       218     },
+{       71*OVERSAMPLENR ,       214     },
+{       78*OVERSAMPLENR ,       209     },
+{       84*OVERSAMPLENR ,       205     },
+{       92*OVERSAMPLENR ,       200     },
+{       100*OVERSAMPLENR        ,       196     },
+{       109*OVERSAMPLENR        ,       192     },
+{       120*OVERSAMPLENR        ,       187     },
+{       131*OVERSAMPLENR        ,       183     },
+{       143*OVERSAMPLENR        ,       179     },
+{       156*OVERSAMPLENR        ,       175     },
+{       171*OVERSAMPLENR        ,       170     },
+{       187*OVERSAMPLENR        ,       165     },
+{       205*OVERSAMPLENR        ,       160     },
+{       224*OVERSAMPLENR        ,       156     },
+{       245*OVERSAMPLENR        ,       151     },
+{       268*OVERSAMPLENR        ,       146     },
+{       293*OVERSAMPLENR        ,       142     },
+{       320*OVERSAMPLENR        ,       137     },
+{       348*OVERSAMPLENR        ,       133     },
+{       379*OVERSAMPLENR        ,       128     },
+{       411*OVERSAMPLENR        ,       123     },
+{       445*OVERSAMPLENR        ,       118     },
+{       480*OVERSAMPLENR        ,       113     },
+{       516*OVERSAMPLENR        ,       108     },
+{       553*OVERSAMPLENR        ,       103     },
+{       591*OVERSAMPLENR        ,       98     },
+{       628*OVERSAMPLENR        ,       93      },
+{       665*OVERSAMPLENR        ,       88      },
+{       702*OVERSAMPLENR        ,       83      },
+{       737*OVERSAMPLENR        ,       78      },
+{       770*OVERSAMPLENR        ,       72      },
+{       801*OVERSAMPLENR        ,       67      },
+{       830*OVERSAMPLENR        ,       62      },
+{       857*OVERSAMPLENR        ,       57      },
+{       881*OVERSAMPLENR        ,       50      },
+{       903*OVERSAMPLENR        ,       46      },
+{       922*OVERSAMPLENR        ,       42      },
+{       939*OVERSAMPLENR        ,       40      },
+{       954*OVERSAMPLENR        ,       35      },
+{       966*OVERSAMPLENR        ,       31      },
+{       977*OVERSAMPLENR        ,       25      },
+{       985*OVERSAMPLENR        ,       20      },
+{       993*OVERSAMPLENR        ,       15      },
+{       999*OVERSAMPLENR        ,       10      },
+{       1004*OVERSAMPLENR       ,       5       },
+{       1008*OVERSAMPLENR       ,       0       } //safety
+};
+#endif
+
 // Pt1000 and Pt100 handling
 //
 // Rt=R0*(1+a*T+b*T*T) [for T>0]
